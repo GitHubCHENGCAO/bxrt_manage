@@ -1,0 +1,16 @@
+server:
+  port: 8012
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/bxrt_namage?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: '123456'
+mybatis:
+  ##检查mybatis配置是否存在
+  check-config-location: true
+  ##配置文件位置
+  config-location: classpath:mybatis/mybatis-config.xml
+  ##mapper文件地址
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.bxrt.entity
